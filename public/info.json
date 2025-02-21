@@ -1,0 +1,86 @@
+{
+  "jobPosting": {
+    "source": "https://jobs.sephora.com/France/job/NEUILLY-SUR-SEINE-CDI-Frontend-Developper-Confirmé-(Front-end-Headless)-HF/1146180855/",
+    "metadata": {
+      "date": "4 févr. 2025",
+      "location": "NEUILLY SUR SEINE, FR",
+      "position": "CDI - Frontend Developper Confirmé (Front-end / Headless) - H/F"
+    },
+    "company": {
+      "name": "Sephora",
+      "description": "Chez Sephora, nous inspirons nos clients, nous responsabilisons nos équipes et nous les aidons à devenir la meilleure version d'eux-mêmes. Nous créons un environnement où les personnes sont valorisées et où les différences sont célébrées. Chaque jour, nos équipes à travers le monde donnent vie à notre raison d'être : changer le regard du monde sur la beauté.",
+      "stats": {
+        "employees": "52 000 collaborateurs passionnés",
+        "markets": "34 marchés",
+        "stores": "plus de 3 000 magasins"
+      }
+    },
+    "context": {
+      "project": "Dans le cadre de l'évolution de notre SI vers une architecture Headless",
+      "team": {
+        "composition": [
+          "3 Tech Leads",
+          "2 Lead Devs",
+          "1 Scrum Master",
+          "±6 Développeurs"
+        ],
+        "mission": "Migration de notre legacy (Sites Sephora EU) vers un front headless en React JS / Next JS"
+      }
+    },
+    "responsibilities": [
+      "Effectuer l'ensemble des tâches inhérentes à un développeur React confirmé (réaliser un code fiable de qualité, participer aux revues de code, élaborer une UI de qualité, débugger, simuler différents contextes de rendu de l'UI)",
+      "Effectuer la maintenance du socle existant (optimisation du code, corrections des bugs, interventions sur les incidents de Prod)",
+      "Effectuer de veille technologique, proposition de sujets techniques visant à améliorer les performances du front web, le SEO et l'accessibilité",
+      "Travailler à l'élaboration des contrats d'interfaces avec notre équipe Back-For-Front (API/Middleware)",
+      "Appliquer – avec l'aide de nos Tech Leads et Lead Devs – les bonnes pratiques de développement ainsi que la mise en place des tests (TU, TDD…)",
+      "Monter rapidement en compétence sur l'utilisation de la stack technique chez Sephora",
+      "Familier aux concepts d'optimisations liés aux clients front-end comme l'optimisation de chargements de pages (bundles splitting, Server-side rendering), les problématiques de rétrocompatibilités navigateurs et le debugging de code",
+      "Collaborer avec une équipe design intégrant un design system"
+    ],
+    "requirements": {
+      "experience": {
+        "minimum": "4 ans d'expérience dans le développement web en HTML, CSS et JavaScript",
+        "frontend": "3 ans minimum en tant que Frontend Developer",
+        "specific": "Expérience sur un projet 'headless' de moyenne ou grande envergure, de préférence dans le contexte de migration d'une plateforme E-Commerce monolithique vers 'headless'"
+      },
+      "technical_skills": [
+        "Expertise React Js et sur le framework NextJS",
+        "Expertise en architectures Front-End",
+        "Connaissances des différentes stratégies de rendu (SSG, SSR, ISR)",
+        "Maîtrise du principe d'hydratation côté client avec ses enjeux, ainsi que du paradigme des 'React Server Components'",
+        "Expérience en méthodologies Agiles, en particulier en SCRUM",
+        "Maîtrise des outils de gestion de projets (Jira, Confluence)",
+        "Sensibilité à la Webperf et capacité à résoudre les problèmes associés",
+        "Sensibilité aux enjeux du SEO et de l'accessibilité d'une plateforme e-commerce",
+        "Maîtrise du principe du développement orienté composant",
+        "Maîtrise des principes du REST API"
+      ],
+      "personal_qualities": [
+        "Rigueur, organisation et souci du détail",
+        "Capacité à résoudre des problèmes complexes",
+        "Adaptabilité et flexibilité face aux changements",
+        "Volonté d'apprendre et de rester à jour sur les évolutions technologiques",
+        "Aisance relationnelle",
+        "Esprit analytique et de synthèse",
+        "Capacité à s'organiser efficacement"
+      ]
+    },
+    "plusPoints": [
+      "Connaissance des principes et enjeux d'une architecture monorepo et/ou d'une architecture micro-frontend",
+      "Contribution à la mise en place d'un Design System et maîtrise des outils y afférent (Figma, Storybook, Zeroheight, etc…)",
+      "Culture DevOPS et des enjeux de CI/CD",
+      "Familiarité avec les environnements Cloud (en particulier GCP)"
+    ],
+    "benefits": {
+      "collaborators": "Vous serez entouré d'équipes talentueuses avec lesquelles vous serez fier de collaborer",
+      "learning": "Nous investissons dans la formation de nos équipes. Vous continuerez à évoluer et à développer vos compétences grâce à des plans de carrière personnalisés",
+      "impact": "En tant que leader de la distribution sélective de produits de beauté de prestige au sein de la famille LVMH, notre impact est mondial"
+    },
+    "values": [
+      "Vous pouvez laisser libre cours à votre créativité, car nous avons un esprit disruptif",
+      "Vous pouvez apprendre et évoluer, car nous vous donnons les moyens de révéler le meilleur de vous-même",
+      "Vous pouvez être vous-même, car vous êtes ce qui nous rend uniques"
+    ],
+    "equalOpportunity": "Sephora est fière d'être un lieu de travail prônant l'égalité des chances pour tous. Nous ne pratiquons aucune discrimination en matière de recrutement, d'embauche, de formation ou encore d'évolution de carrière."
+  }
+}
