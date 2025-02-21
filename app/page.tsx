@@ -1,37 +1,63 @@
-"use client"
-
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { toast } from "sonner"
-import { useEffect, useState } from "react"
 
-// Convert to client component and handle data fetching
-export default function Home() {
-  const [jobData, setJobData] = useState<any>(null)
+// Add type definitions at the top of the file
+type JobMetadata = {
+  date: string
+  location: string
+  position: string
+}
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const res = await import("@/public/info.json")
-      setJobData(res.jobPosting)
-    }
-    fetchData()
-  }, [])
-
-  if (!jobData) return null
-
-  const handleLinkedInApply = () => {
-    toast("✨ Candidature via LinkedIn", {
-      description: "Votre candidature a été envoyée avec succès!"
-    })
+type JobContext = {
+  project: string
+  team: {
+    composition: string[]
+    mission: string
   }
+}
 
-  const handleCVApply = () => {
-    toast("📄 Candidature avec CV", {
-      description: "Merci de votre intérêt! Notre équipe RH vous contactera bientôt."
-    })
+type JobRequirements = {
+  experience: Record<string, string>
+  technical_skills: string[]
+  personal_qualities: string[]
+}
+
+type JobBenefits = {
+  collaborators: string
+  learning: string
+  impact: string
+}
+
+type CompanyStats = {
+  employees: string
+  markets: string
+  stores: string
+}
+
+type JobPosting = {
+  metadata: JobMetadata
+  company: {
+    description: string
+    stats: CompanyStats
   }
+  context: JobContext
+  responsibilities: string[]
+  requirements: JobRequirements
+  plusPoints: string[]
+  benefits: JobBenefits
+  values: string[]
+  equalOpportunity: string
+}
+
+async function getJobData(): Promise<JobPosting> {
+  const res = await import("@/public/info.json")
+  return res.jobPosting
+}
+
+export default async function Home() {
+  const jobData = await getJobData()
 
   return (
     <main className="min-h-screen bg-white p-2">
@@ -42,7 +68,7 @@ export default function Home() {
           <span>Lieu : {jobData.metadata.location}</span>
         </div>
         <h1 className="text-5xl font-bold mb-6">{jobData.metadata.position}</h1>
-        <Button size="lg" onClick={handleCVApply}>
+        <Button size="lg">
           Postuler maintenant
         </Button>
       </div>
@@ -125,7 +151,7 @@ export default function Home() {
                 <div>
                   <h3 className="text-lg font-semibold mb-4">Qualités Personnelles</h3>
                   <div className="flex flex-wrap gap-2">
-                    {jobData.requirements.personal_qualities.map((quality, i) => (
+                    {jobData.requirements.personal_qualities.map((quality: string, i) => (
                       <Badge key={i} variant="outline" className="bg-white">
                         {quality}
                       </Badge>
@@ -158,17 +184,10 @@ export default function Home() {
                 <h2 className="text-xl font-bold">Postuler</h2>
               </CardHeader>
               <CardContent className="space-y-6">
-                <Button 
-                  className="w-full hover:bg-[#CC006A] text-white"
-                  onClick={handleLinkedInApply}
-                >
+                <Button className="w-full hover:bg-[#CC006A] text-white">
                   Postuler avec LinkedIn
                 </Button>
-                <Button 
-                  variant="outline" 
-                  className="w-full"
-                  onClick={handleCVApply}
-                >
+                <Button variant="outline" className="w-full">
                   Postuler avec mon CV
                 </Button>
 
